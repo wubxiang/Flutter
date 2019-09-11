@@ -48,7 +48,10 @@ class MyApp extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          new Icon(icon, color: color,),
+          new Icon(
+            icon,
+            color: color,
+          ),
           new Container(
             margin: const EdgeInsets.only(top: 8.0),
             child: new Text(
@@ -92,7 +95,7 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
       ),
       home: new Scaffold(
         body: new ListView(
-          children: <Widget>[
+          children: [
             new Image.asset(
               'images/bg_member.png',
               width: 600.0,

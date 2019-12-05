@@ -1,32 +1,20 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class AdjustNumScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+    // TODO: implement build
+    return new AdjustNum();
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class AdjustNum extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  AdjustNumState createState() => AdjustNumState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class AdjustNumState extends State<AdjustNum> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -40,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('有状态组件'),
       ),
       //居中布局
       body: Center(

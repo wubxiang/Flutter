@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: '导航页面示例',
       theme: ThemeData(
+        //主题颜色
         primarySwatch: Colors.blue,
       ),
       home: new MainScreen(),
@@ -34,7 +35,7 @@ class MainScreen extends StatelessWidget{
               '查看商品详情页'
           ),
           onPressed: (){
-            Navigator.push(+
+            Navigator.push(
                 context,
                 new MaterialPageRoute(builder: (context) => new SecondScreen())
             );
